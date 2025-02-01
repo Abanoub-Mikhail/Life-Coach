@@ -1,0 +1,23 @@
+section.all-services {
+    margin-top: -180px;
+}
+
+section.all-services .cards .body a{
+    background-image: linear-gradient(to right, #642B73 0%, #C6426E  51%, #642B73  100%);
+    background-size: 200% auto;
+    padding: 15px 45px;
+    transition: background-position var(--main-duration), transform var(--main-duration) ;
+
+}
+
+section.all-services .cards .body a:hover{
+    background-position: right center;
+    transform: translateY(-5px);
+}
+section.all-services .cards{
+    transition: transform var(--main-duration);
+}
+
+section.all-services .cards:hover{
+    transform: scale(1.05);
+}

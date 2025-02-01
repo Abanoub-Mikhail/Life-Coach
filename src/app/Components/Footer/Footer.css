@@ -1,0 +1,35 @@
+footer {
+    background-color: white;
+}
+footer .usful-links .links{
+    color: var(--second-color);
+}
+
+footer .usful-links .links a {
+    width: fit-content;
+    color: var(--second-color);
+    transition: color var(--main-duration);
+    position: relative;
+    overflow: hidden ;
+}
+footer .usful-links .links a:hover{
+    color: var(--hover-color);
+}
+
+footer .usful-links .links a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform var(--main-duration);
+    background-color: var(--hover-color);
+}
+
+footer .usful-links .links a:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}

@@ -1,24 +1,20 @@
+/* START VARIABLES */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --main-background-color: #000324;
+  --second-background-color: #0a0f3c;
+  --hover-color:#4a61e1;
+  --main-duration:0.2s;
+  --main-bg-image:linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  --second-bg-image:-webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,85,1) 50%, rgba(252,176,69,1) 100%);
+  --second-color:grey;
 }
+/* END VARIABLES */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+/* START GOLBAL STYLE */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background-color: var(--main-background-color);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,9 +30,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.gradient-text{
+  background: var(--second-bg-image);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+/* START GOLBAL STYLE */

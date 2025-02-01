@@ -1,0 +1,14 @@
+div.navigate h4 {
+    font-size: 16px;
+}
+div.navigate h4 span{
+    color: rgb(189, 188, 188);
+}
+
+div.navigate h4 a {
+    transition: color var(--main-duration);
+    color: aqua;
+}
+div.navigate h4 a:hover{
+    color: var(--hover-color);
+}

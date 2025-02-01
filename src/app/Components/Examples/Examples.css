@@ -1,0 +1,38 @@
+section.examples{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+section.examples .cart .image img {
+    width: 100%;
+    height: auto;
+    transition:  transform var(--main-duration);
+    cursor: pointer;
+}
+
+section.examples .slick-prev:before,section.examples .slick-next:before {
+    font-size: 50px;
+    color: white;
+    opacity: 1;
+}
+section.examples .slick-prev {
+    left:-60px;
+    z-index: 5;
+}
+
+section.examples .cart .image:hover img{
+    transform: translateY(-15px);
+}
+
+
+
+@media only screen and (max-width: 850px){
+    section.examples .slick-next {
+        right:20px;
+    }
+    section.examples .slick-prev {
+        left:-10px;
+        z-index: 5;
+    }
+  }

@@ -1,0 +1,64 @@
+section.features{
+    padding-top:100px ;
+    padding-bottom:100px ;
+}
+
+
+section.features h2 {
+    font-size: 50px;
+}
+
+
+section.features .progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  section.features .progress-bar1{
+    background: 
+      radial-gradient(closest-side, white 85%, transparent 80% 100%),
+      conic-gradient(rgb(255, 187, 0) 80%, rgb(214, 213, 213) 0);    
+  }
+  section.features .progress-bar2{
+    background: 
+      radial-gradient(closest-side, white 85%, transparent 80% 100%),
+      conic-gradient(rgb(255, 187, 0) 60%, rgb(214, 213, 213) 0);    
+  }
+  section.features .progress-bar3{
+    background: 
+      radial-gradient(closest-side, white 85%, transparent 80% 100%),
+      conic-gradient(rgb(255, 187, 0) 70%, rgb(214, 213, 213) 0);    
+  }
+  section.features .progress-bar4{
+    background: 
+      radial-gradient(closest-side, white 85%, transparent 80% 100%),
+      conic-gradient(rgb(255, 187, 0) 95%, rgb(214, 213, 213) 0);    
+  }
+
+  section.features .progress-bar span{
+    font-size: 35px;
+    color: var(--second-color);
+  }
+
+  @media only screen and (max-width: 768px){
+    section.features h2{
+        font-size: 40px;
+    }
+  }
+  @media only screen and (min-width: 768px){
+    section.features .progress-bar{
+      width: 150px;
+      height: 150px;
+    }
+  }
+  @media only screen and (min-width: 992px){
+    section.features .progress-bar{
+      width: 200px;
+      height: 200px;
+    }
+  }

@@ -1,0 +1,53 @@
+section.programs{
+    background-color: var(--second-background-color);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+section.programs .header h2{
+    font-size: 50px;
+}
+
+section.programs .card-body h3{
+    text-shadow: 1px 1px 20px #000000;
+    font-size: 40px;
+}
+section.programs .card-body {
+    background-image: var(--main-bg-image);
+    transition: transform var(--main-duration);
+}
+section.programs .card-body:hover{
+    transform: translateY(-10px);
+}
+
+section.programs .card-body .body-content h2{
+    font-size: 80px;
+    color: cornflowerblue;
+    text-shadow: 1px 1px 20px #ffffff;  
+}
+
+section.programs .card-body .body-content a {
+    background-image: linear-gradient(to right, #4b6cb7 0%, #182848  51%, #4b6cb7  100%);
+    background-size: 200% auto;
+    color: white;
+    width: 80%;
+    margin: auto;
+    text-shadow: 1px 1px 20px #000000;
+    box-shadow: 1px 3px 5px #000000;
+    transition: background-position var(--main-duration), transform var(--main-duration);
+}
+
+section.programs .card-body .body-content a:hover{
+    background-position: right center;
+    transform: scale(1.1);
+}
+
+
+  @media only screen and (min-width: 768px){
+    section.programs .card-body .body-content a{
+        font-size: 16px;
+    }
+  }
+  @media only screen and (min-width: 992px){
+    section.programs .card-body .body-content a{
+        font-size: 25px;
+    }
+  }

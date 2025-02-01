@@ -1,0 +1,220 @@
+nav.nav{
+    -webkit-box-shadow: 0px 10px 22px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 22px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 22px -8px rgba(0,0,0,0.75);   
+    
+}
+
+nav.nav a {
+    transition: color var(--main-duration);
+}
+nav.nav a:hover {
+    color:var(--hover-color);
+}
+
+nav.nav .burger-menu{
+    background-color: var(--main-background-color);
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+nav.nav .main-button a{
+    background-image: linear-gradient(to right, #3a6186 0%, #89253e  51%, #3a6186  100%);
+    background-size: 200% auto;
+    transition: background-position var(--main-duration);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+nav.nav .main-button a:hover {
+    background-position: right center;
+}
+nav.nav .cart-logo{
+    cursor: pointer;
+}
+nav.nav .cart-logo span i {
+    font-size: 20px;
+}
+nav.nav .cart-logo .counter{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: var(--hover-color);
+    top: -15px;
+    right: -3px;
+    font-size: 12px;
+}
+
+.scroll-nav{
+    top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    transition: transform var(--main-duration);
+    transform: translateY(-80px);
+    padding-inline: 50px;
+}
+.scroll-nav.translate-down{
+    transform: translateY(0px);
+}
+
+
+
+/************* SIDE NAVBAR *****************/
+
+nav .side-nav{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: visibility var(--main-duration) , opacity var(--main-duration);
+    visibility: hidden;
+    z-index: 55;
+}
+
+.visibility-bg{
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+nav .side-nav .slider{
+    background-color: white;
+    max-width:400px;
+    height: 100%;
+    padding: 50px;
+    opacity: 0;
+    transition: transform var(--main-duration), opacity var(--main-duration);
+    transform: translateX(-100%);
+}
+
+.slide-rtl{
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+}
+
+nav .side-nav .slider .logo span{
+    cursor: pointer;
+}
+
+.enroll button{
+    border: 3px solid var(--hover-color);
+    transition: background-color var(--main-duration);
+}
+.enroll button:hover{
+    background-color: var(--hover-color);
+    color: white;
+}
+nav .side-nav .slider .find-us p {
+    color: rgba(128, 128, 128, 0.516);
+    font-size: 12px; 
+}
+
+.social .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    border: 2px solid rgba(128, 128, 128, 0.516);
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1;
+}
+ .social .icon::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--hover-color);
+    z-index: -1;
+    transform: scale(0.3);
+    opacity: 0;
+    border-radius: 50%;
+    transition: all var(--main-duration);
+}
+.social .icon:hover::after{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.social .icon:hover{
+    color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+    nav .large-screen{
+        display: none;
+    }
+
+    nav.nav .burger-menu{
+        display: inline-block;
+    }
+
+}
+
+
+
+
+/************* SIDE FRESH CART *****************/
+
+nav .fresh-cart{
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        transition: visibility var(--main-duration) , opacity var(--main-duration);
+        visibility: hidden;
+        z-index: 55;
+    }
+
+    nav .fresh-slider{
+        background-color: white;
+        max-width:600px;
+        height: 100%;
+        margin-left: auto;
+        padding: 50px;
+        opacity: 1;
+        transition: transform var(--main-duration), opacity var(--main-duration);
+        transform: translateX(100%);
+    }
+
+    nav .fresh-cart .header span {
+        cursor: pointer;
+    }
+
+    nav .fresh-cart .body{
+        min-height: 65%;
+    }
+
+    nav .fresh-cart .body p{
+        color: var(--second-color);
+    }
+
+    nav .fresh-cart button{
+        background-image: var(--main-bg-image);
+        background-size: 200% auto;
+        font-size: 24px;
+        transition: background-position var(--main-duration);
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    }
+    nav .fresh-cart button:hover{
+        background-position: right center;
+    }
+
+    @media only screen and (max-width: 768px){
+        nav .fresh-slider {
+            max-width: 400px;
+        }
+        .scroll-nav{
+            padding-inline: 10px;
+        }
+    }
