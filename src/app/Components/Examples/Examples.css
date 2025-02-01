@@ -29,10 +29,13 @@ section.examples .cart .image:hover img{
 
 @media only screen and (max-width: 850px){
     section.examples .slick-next {
-        right:20px;
+        right:15px;
     }
     section.examples .slick-prev {
-        left:-10px;
+        left:0;
         z-index: 5;
+    }
+    section.examples .slick-prev:before,section.examples .slick-next:before{
+        font-size: 30px;
     }
   }
