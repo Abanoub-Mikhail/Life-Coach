@@ -16,6 +16,7 @@ const SidebarMenu = ({visible, setVisible}) => {
               <ul className=' list-unstyled'>
                 <li><Link href='#' className=' py-2 d-inline-block w-100 border-bottom fw-bolder'>Home</Link></li>
                 <li><Link href='#' className=' py-2 d-inline-block w-100 border-bottom fw-bolder'>Store</Link></li>
+                <li><Link href='/services' className=' py-2 d-inline-block w-100 border-bottom fw-bolder'>services</Link></li>
                 <li><Link href='#' className=' py-2 d-inline-block w-100 fw-bolder'>About Us</Link></li>
               </ul>
             </div>
